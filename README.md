@@ -52,7 +52,7 @@ mvn test -Dsurefire.includeJUnit5Engines=cucumber -Dcucumber.features=src/test/r
 ## Architectural Decisions
 
 ### Clean Architecture
-I decided to recreate the entities to `drivers.repositories` package to avoid coupling the entities from `entities` package with the database annotation particularities.
+I decided to recreate the entities in `drivers.repositories` package to avoid coupling the entities from `entities` package with the database annotation particularities.
 
 ### Database mongo repository
 I created two database classes, one using JPA queries and another one using mongo template for more complex queries.
